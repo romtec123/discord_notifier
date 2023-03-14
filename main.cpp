@@ -7,10 +7,20 @@
 * with a name, list webhooks, update webhooks, and send         *
 * messages through a shell.                                     *
 ****************************************************************/
-
 #include <iostream>
+#include <vector>
+#include <fstream>
+#include "hookManager.h"
+using namespace std;
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+int main (int argc, char * argv [])
+{
+    cout << "Argument count: " << argc << "\nArguments:\n" << endl;
+
+    for (int i=0; i < argc; i++)
+    {
+        cout << i << ": " << argv[i] << endl;
+    }
+
     return 0;
 }

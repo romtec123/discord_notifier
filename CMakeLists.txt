@@ -3,4 +3,4 @@ project(discord_notify)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(discord_notify main.cpp)
+add_executable(discord_notify main.cpp hookManager.cpp hookManager.h)
