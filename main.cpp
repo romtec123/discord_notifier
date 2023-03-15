@@ -27,7 +27,7 @@ int main(int argc, char * argv [])
     }
 /****************************************************************/
     //Return help string if there are no arguments
-    if(argc < 1)
+    if(argc < 2)
     {
         cout << getHelpString("No arguments given!");
         return 0;
@@ -73,7 +73,7 @@ string getHelpString(string warnString)
 {
     string str = "Discord Notifier " + VERSION +
     " - by romtec123\n" + warnString + "\n\nUsage: hooknotify [Sub-Command] " +
-    "[<Sub-Command Options>]\n\nAvailable sub-commands:\n" +
+    "[<Sub-Command Options>]\n\nAvailable sub-commands and their options:\n" +
     "help - Sends this message\n" +
     "add <webhook name> <\"webhook url\"> - Add a new webhook\n" +
     "create <webhook name> <\"webhook url\"> - Add a new webhook\n\n" +
