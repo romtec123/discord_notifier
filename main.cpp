@@ -11,18 +11,22 @@
 #include <vector>
 #include "hookManager.h"
 using namespace std;
+
+#define DEBUG true
+#define debug if(DEBUG) cout
+
 const string VERSION = "1.0.0-alpha";
 string getHelpString(string warnString);
 
 int main(int argc, char * argv [])
 {
 /****************************************************************/
-    cout << "Argument count: " << argc
+    debug << "Argument count: " << argc
     << "\nArguments:\n" << endl;
 
     for (int i=0; i < argc; i++)
     {
-        cout << i << ": " << argv[i] << endl;
+        debug << i << ": " << argv[i] << endl;
     }
 /****************************************************************/
     //Return help string if there are no arguments

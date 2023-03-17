@@ -6,8 +6,6 @@
 * Description: This class will provide methods for managing     *
 * the webhooks.                                                 *
 ****************************************************************/
-#define DEBUG false
-#define debug if(DEBUG) cout
 #include "hookManager.h"
 
 
