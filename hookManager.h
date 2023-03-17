@@ -14,6 +14,7 @@
 using namespace std;
 
 class hookManager {
+
     public:
     hookManager ();
     ~hookManager ();
@@ -24,13 +25,11 @@ class hookManager {
     private:
     string name;
     string url;
-    void saveToDisk(const string & name);
-    void loadFromDisk(const string & name);
-    void deleteFromDisk(const string & name);
-
-
-
-
+    void saveToDisk (const string & name);
+    void loadFromDisk (const string & name);
+    void deleteFromDisk (const string & name);
+    void setName (const string & name);
+    void setURL (const string & URL);
 };
 
 
