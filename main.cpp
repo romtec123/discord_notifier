@@ -9,7 +9,6 @@
 ****************************************************************/
 #include <iostream>
 #include <vector>
-#include <fstream>
 #include "hookManager.h"
 using namespace std;
 const string VERSION = "1.0.0-alpha";
@@ -38,7 +37,7 @@ int main(int argc, char * argv [])
 
     if(subCmd == "help")
     {
-        cout << getHelpString("Help argument called.");
+        cout << getHelpString("Help argument.");
     }
     else if(subCmd == "add" || subCmd == "create")
     {
@@ -55,14 +54,15 @@ int main(int argc, char * argv [])
     }
     else if(subCmd == "send")
     {
-
+        //Send an embed or text message to a webhook
     }
     else if(subCmd == "list")
     {
-
+        //List all saved webhooks
     }
     else {
-        cout << getHelpString("Unknown argument given!");
+        //Catch-all
+        cout << getHelpString("Unknown argument!");
     }
 
     return 0;

@@ -10,8 +10,26 @@
 #ifndef DISCORD_NOTIFY_HOOKMANAGER_H
 #define DISCORD_NOTIFY_HOOKMANAGER_H
 
+#include <string>
+using namespace std;
 
 class hookManager {
+    public:
+    hookManager ();
+    ~hookManager ();
+    hookManager (const string & name, const string & url);
+    void updateUrl (const string & name, const string & url);
+    void removeHook (const string & name);
+
+    private:
+    string name;
+    string url;
+    void saveToDisk(const string & name);
+    void loadFromDisk(const string & name);
+    void deleteFromDisk(const string & name);
+
+
+
 
 };
 
